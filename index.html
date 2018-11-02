@@ -63,6 +63,26 @@
       	</script>
       </section>
 
+      <section id="fragment">
+        <h3>fragment There</h3>
+        <p class="fragment grow">grow</p>
+        <p class="fragment shrink">shrink</p>
+        <p class="fragment fade-out">fade-out</p>
+        <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+        <p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
+        <p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
+        <p class="fragment highlight-current-blue">blue only once</p>
+        <p class="fragment highlight-red">highlight-red</p>
+        <p class="fragment highlight-green">highlight-green</p>
+        <p class="fragment highlight-blue">highlight-blue</p>
+      </section>
+
+      <section>
+        <p class="fragment" data-fragment-index="3">Appears last</p>
+        <p class="fragment" data-fragment-index="1">Appears first</p>
+        <p class="fragment" data-fragment-index="2">Appears second</p>
+      </section>
+
       <section data-markdown="README.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
         data-charset="iso-8859-15">
         <!--
@@ -224,8 +244,7 @@
         transitions: true,
         custom: false
       },
-      chalkboard: { // font-awesome.css must be available
-        src: "chalkboard.json",
+      chalkboard: {
         toggleChalkboardButton: { left: "80px" },
         toggleNotesButton: { left: "130px" }
       },
