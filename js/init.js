@@ -35,6 +35,7 @@ Reveal.initialize({
     { src: 'plugin/markdown/marked.js', async: true },
     { src: 'plugin/markdown/markdown.js', async: true }
   ],
+  // Just press »F« on your keyboard to show your presentation in fullscreen mode. Press the »ESC« key to exit fullscreen mode.
   keyboard: {
     67: function () { RevealChalkboard.toggleNotesCanvas() },	// toggle chalkboard when 'c' is pressed
     66: function () { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
