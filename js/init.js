@@ -29,9 +29,8 @@ Reveal.initialize({
   },
   // Optional reveal.js plugins
   dependencies: [
-    { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-    { src: 'plugin/notes/notes.js', async: true },
     { src: 'plugin/menu/menu.js', async: true },
+    { src: 'plugin/notes/notes.js', async: true },
     { src: 'plugin/chalkboard/chalkboard.js', async: true },
     { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
     { src: 'plugin/markdown/marked.js', async: true },
