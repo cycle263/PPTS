@@ -1,7 +1,7 @@
 # 浏览器线程
 
-- 主题1-内容1   `<!-- .element: class="fragment" data-fragment-index="1" -->`
-- 主题1-内容2   `<!-- .element: class="fragment" data-fragment-index="2" -->`
+- 主题1-内容1   
+- 主题1-内容2   
 
 ---
 
