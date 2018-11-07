@@ -29,12 +29,14 @@ Reveal.initialize({
   },
   // Optional reveal.js plugins
   dependencies: [
+    { src: 'plugin/markdown/marked.js', async: true },
+    { src: 'plugin/markdown/markdown.js', async: true },
     { src: 'plugin/menu/menu.js', async: true },
     { src: 'plugin/notes/notes.js', async: true },
     { src: 'plugin/chalkboard/chalkboard.js', async: true },
-    { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-    { src: 'plugin/markdown/marked.js', async: true },
-    { src: 'plugin/markdown/markdown.js', async: true }
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function () { 
+      hljs.initHighlightingOnLoad(); 
+    } }
   ],
   // Just press »F« on your keyboard to show your presentation in fullscreen mode. Press the »ESC« key to exit fullscreen mode.
   keyboard: {
