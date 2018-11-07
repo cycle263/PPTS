@@ -33,6 +33,7 @@ Reveal.initialize({
     { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
     { src: 'plugin/menu/menu.js', async: true },
     { src: 'plugin/notes/notes.js', async: true },
+    { src: 'plugin/zoom/zoom.js' },
     { src: 'plugin/chalkboard/chalkboard.js', async: true },
     { src: 'plugin/highlight/highlight.js', async: true, callback: function () { 
       hljs.initHighlightingOnLoad(); 
