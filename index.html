@@ -232,25 +232,50 @@
   <!-- <script async src="js/init.js"></script> -->
   <script>
 
-    // More info https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-
-      transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-      // More info https://github.com/hakimel/reveal.js#dependencies
-      dependencies: [
-
-        { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-
-        { src: 'plugin/notes/notes.js', async: true }
-      ]
-    });
+    // Just press »Esc / o« on your keyboard to toggle the overview mode
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        mouseWheel: true,
+        transition: 'slide',  // none/fade/slide/convex/concave/zoom
+        transitionSpeed: 'default', // default/fast/slow
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        menu: {
+          numbers: true,
+          openSlideNumber: true,
+          themes: true,
+          themesPath: 'css/theme/',
+          transitions: true,
+          custom: false
+        },
+        chalkboard: {
+          toggleChalkboardButton: { left: "80px" },
+          toggleNotesButton: { left: "130px" }
+        },
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+          { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+          { src: 'plugin/menu/menu.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/chalkboard/chalkboard.js', async: true },
+          {
+            src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ],
+        // Just press »F« on your keyboard to show your presentation in fullscreen mode. Press the »ESC« key to exit fullscreen mode.
+        keyboard: {
+          67: function () { RevealChalkboard.toggleNotesCanvas() },	// toggle chalkboard when 'c' is pressed
+          66: function () { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+          46: function () { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+          8: function () { RevealChalkboard.reset() },	// reset all chalkboard data when 'BACKSPACE' is pressed
+          68: function () { RevealChalkboard.download() },	// downlad chalkboard drawing when 'd' is pressed
+        },
+      });
 
   </script>
   <a class="fork-cycle263" href="https://github.com/cycle263/PPTS">
