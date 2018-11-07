@@ -12,6 +12,7 @@ Reveal.initialize({
   history: true,
   center: true,
   mouseWheel: true,
+  slideNumber: 'c/t',
   transition: 'slide',  // none/fade/slide/convex/concave/zoom
   transitionSpeed: 'default', // default/fast/slow
   backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
