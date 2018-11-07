@@ -29,8 +29,8 @@ Reveal.initialize({
   },
   // Optional reveal.js plugins
   dependencies: [
-    { src: 'plugin/markdown/marked.js', async: true },
-    { src: 'plugin/markdown/markdown.js', async: true },
+    { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+    { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
     { src: 'plugin/menu/menu.js', async: true },
     { src: 'plugin/notes/notes.js', async: true },
     { src: 'plugin/chalkboard/chalkboard.js', async: true },
