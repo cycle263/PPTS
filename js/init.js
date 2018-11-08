@@ -36,7 +36,7 @@ Reveal.initialize({
     { src: 'plugin/notes/notes.js', async: true },
     { src: 'plugin/zoom/zoom.js' },
     { src: 'plugin/chalkboard/chalkboard.js', async: true },
-    { src: 'plugin/highlight/highlight.js', async: false, callback: function () { 
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function () { 
       hljs.initHighlightingOnLoad(); 
     } }
   ],
