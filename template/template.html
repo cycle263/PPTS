@@ -69,10 +69,10 @@
       // Optional reveal.js plugins
       dependencies: [
         { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.min.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
         { src: 'plugin/menu/menu.js', async: true },
-        { src: 'plugin/notes/notes.js', async: true },
-        { src: 'plugin/zoom/zoom.js' },
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/notes/notes.min.js', async: true },
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.min.js' },
         { src: 'plugin/chalkboard/chalkboard.js', async: true }
       ],
       // Just press »F« on your keyboard to show your presentation in fullscreen mode. Press the »ESC« key to exit fullscreen mode.
