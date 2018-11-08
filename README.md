@@ -26,11 +26,9 @@ My ppts
 
 ---
 
-### select
+## print
 
-### input
-
-### textarea
+url地址加上查询字符串?print-pdf
 
 Note: test note
 
