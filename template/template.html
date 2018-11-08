@@ -39,7 +39,9 @@
   </div>
 
   <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js"></script>
+  <!-- cnd加载，避免highlight回调加载hljs异常问题，猜测原因hightlight第二批并行加载导致 -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/highlight/highlight.js"></script>
   <script>
     // Just press »Esc / o« on your keyboard to toggle the overview mode
     Reveal.initialize({
@@ -68,11 +70,6 @@
       dependencies: [
         { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
         { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        {
-          src: 'plugin/highlight/highlight.js', async: true, callback: function () {
-            hljs && hljs.initHighlightingOnLoad();
-          }
-        },
         { src: 'plugin/menu/menu.js', async: true },
         { src: 'plugin/notes/notes.js', async: true },
         { src: 'plugin/zoom/zoom.js' },
@@ -87,6 +84,7 @@
         68: function () { RevealChalkboard.download() },	// downlad chalkboard drawing when 'd' is pressed
       },
     });
+    hljs.initHighlightingOnLoad();
   </script>
 
   <a class="fork-cycle263" href="https://github.com/cycle263/PPTS">

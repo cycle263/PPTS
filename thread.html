@@ -47,7 +47,9 @@
   </div>
 
   <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js"></script>
+  <!-- cnd加载，避免highlight回调加载hljs异常问题，猜测原因hightlight第二批并行加载导致 -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/highlight/highlight.js"></script>
   <script>
     // Just press »Esc / o« on your keyboard to toggle the overview mode
     Reveal.initialize({
@@ -76,11 +78,6 @@
       dependencies: [
         { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
         { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        {
-          src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/highlight/highlight.js', async: true, callback: function () {
-            hljs && hljs.initHighlightingOnLoad();
-          }
-        },
         { src: 'plugin/menu/menu.js', async: true },
         { src: 'plugin/notes/notes.js', async: true },
         { src: 'plugin/zoom/zoom.js' },
@@ -95,6 +92,7 @@
         68: function () { RevealChalkboard.download() },	// downlad chalkboard drawing when 'd' is pressed
       },
     });
+    hljs.initHighlightingOnLoad();
   </script>
   <a class="fork-cycle263" href="https://github.com/cycle263/PPTS">
   <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67"
