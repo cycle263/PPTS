@@ -54,7 +54,20 @@
       <section id="js thread">
         <h2>js引擎线程的jobs</h2>
         <p class="fragment" data-fragment-index="1">解析执行 Javascript 脚本</p>
-        <p class="fragment highlight-red" data-fragment-index="2">只有一个 JS 线程在运行 JS 程序</p>
+        <pre class="fragment" data-fragment-index="2">
+          <code>
+            <script>
+            function test(){
+              console.log('something');
+            }
+            test();
+            </script>
+            <script src="/js/bar.js"></script>
+            <script async src="/js/boo.js"></script>
+            <script defer src="/js/foot.js"></script>
+          </code>
+        </pre>
+        <p class="fragment highlight-red" data-fragment-index="3">只有一个 JS 线程在运行 JS 程序</p>
       </section>
     </div>
   </div>
