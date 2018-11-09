@@ -31,10 +31,17 @@
   <div class="reveal">
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-      <section id="thread" data-title="browser thread">
-        <p>JavaScript是单线程的</p>
-        <p>浏览器线程呢？</p>
-        <p class="fragment fade-in">浏览器内核是多线程的，线程直接相互配置保持同步</p>
+      <section id="index">
+        <ul>
+          <li>浏览器线程，线程之间的合作</li>
+          <li>宏任务(macrotasks) vs 微任务(microtasks)</li>
+          <li>浏览器线程与js异步之间的关系</li>
+        </ul>
+      </section>
+      <section id="thread">
+        <p>JavaScript是单线程的</p><br/>
+        <h3>浏览器线程呢？</h3>
+        <p class="fragment fade-in">浏览器内核是多线程的，线程之间相互配合并保持同步</p>
       </section>
       <section id="types">
         <h2>浏览器主要线程</h2>
@@ -43,6 +50,11 @@
         <p class="fragment" data-fragment-index="3">http网络请求线程</p>
         <p class="fragment" data-fragment-index="4">定时触发器线程</p>
         <p class="fragment" data-fragment-index="5">事件处理线程</p>
+      </section>
+      <section id="js thread">
+        <h2>js引擎线程的jobs</h2>
+        <p class="fragment" data-fragment-index="1">解析执行 Javascript 脚本</p>
+        <p class="fragment highlight-red" data-fragment-index="2">只有一个 JS 线程在运行 JS 程序</p>
       </section>
     </div>
   </div>
