@@ -32,11 +32,17 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
       <section id="thread" data-title="browser thread">
-        <p>浏览器线程</p>
+        <p>JavaScript是单线程的</p>
+        <p>浏览器线程呢？</p>
+        <p class="fragment fade-in">浏览器内核是多线程的，线程直接相互配置保持同步</p>
       </section>
-      <section data-markdown>
-      		- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
-      		- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+      <section id="types">
+        <h2>浏览器主要线程</h2>
+        <p class="fragment" data-fragment-index="1">js引擎线程</p>
+        <p class="fragment" data-fragment-index="2">GUI渲染线程</p>
+        <p class="fragment" data-fragment-index="3">http网络请求线程</p>
+        <p class="fragment" data-fragment-index="4">定时触发器线程</p>
+        <p class="fragment" data-fragment-index="5">事件处理线程</p>
       </section>
     </div>
   </div>
