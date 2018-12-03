@@ -54,16 +54,19 @@
         <p class="fragment">解析执行 Javascript 脚本</p>
         <pre class="fragment">
           <code>
+            <!-- 不阻碍DOM下载和解析，阻碍渲染，因为css加载是由单独的下载线程异步下载的 -->
+            <link href="/css/test.css" />
             <script>
             function test(){
               console.log('something');
             }
             test();
             </script>
+            <!-- async 阻塞页面解析和渲染，下载解析完脚本立即执行 -->
             <script src="/js/bar.js"></script>
-            <!-- async 阻塞加载和渲染，下载完立即执行，顺序难以保证 -->
+            <!-- async 不阻塞页面解析和渲染，下载完立即执行，顺序难以保证 -->
             <script async src="/js/boo.js"></script>
-            <!-- defer 阻塞加载和渲染，下载后等DOM解析完才执行 -->
+            <!-- defer 不阻塞页面解析和渲染，下载后等DOM解析完才执行 -->
             <script defer src="/js/foot.js"></script>
           </code>
         </pre>
