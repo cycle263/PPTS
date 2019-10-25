@@ -5,30 +5,37 @@ My ppts
 ---
 
 ## 快捷键 - keyboard
-  
-全屏  f
 
-退出全屏  Esc
+全屏 f
 
-上一页  p / 左方向键
+退出全屏 Esc
 
-下一页  n / 空格 / 右方向键
+上一页 p / 左方向键
 
-首页  Home
+下一页 n / 空格 / 右方向键
 
-末页  End
+首页 Home
 
-缩略图  Esc / o
+末页 End
 
-黑屏  b
+缩略图 Esc / o
 
-演讲提示模式  s
+黑屏 b
+
+演讲提示模式 s
 
 ---
 
 ## print
 
-url地址加上查询字符串?print-pdf
+url 地址加上查询字符串?print-pdf
 
 Note: test note
 
+## Demo
+
+- [example](./example.html)
+
+- [template](./template/template.html)
+
+- [thread](./frontend/thread.html)
