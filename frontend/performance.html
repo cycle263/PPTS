@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Front-end ppt templates</title>
+  <meta name="description" content="Create beautiful presentations using Markdown">
+  <meta name="keyword"
+    content="前端, 前端大世界, frontend, javascript, es6, css, html, react, webpack, jquery, 前端开发, http, 个人博客, web">
+  <meta name="author" content="Cycle263">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="shortcut icon" href="cycle.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/black.min.css"
+    id="theme">
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/css/zenburn.min.css">
+  <script>
+    // print pdf
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ?
+      'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/pdf.css' :
+      'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+  <!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section id="home">
+        <h1>如何用Chrome进行页面性能分析？</h1>
+        <p>
+          <small>Created by Cycle263</small>
+        </p>
+      </section>
+
+      <section id="introduction">
+        <h3>Hey There</h3>
+        <p>Have you ever used
+          <a href="https://github.com/hakimel/reveal.js">reveal.js</a> and wanted jump
+          <br />somewhere else in your presentation?</p>
+        <p>The slide overview is great but perhaps you want to
+          <br />change slides without your audience seeing everything.</p>
+        <p>Perhaps you need to quickly change the
+          <br />theme without editing the slide source.</p>
+        <p>Give
+          <a href="https://github.com/denehyg/reveal.js-menu">reveal.js-menu</a> a try</p>
+      </section>
+
+      <section data-markdown>
+        - Item 1
+        <!-- .element: class="fragment" data-fragment-index="2" -->
+
+        - Item 2
+        <!-- .element: class="fragment" data-fragment-index="1" -->
+      </section>
+
+      <section data-markdown="../docs/performance.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+        data-separator-notes="^Note:" data-charset="iso-8859-15">
+        <!--
+            Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+            For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+        -->
+      </section>
+
+      <section id="fragment">
+        <h3>fragment There</h3>
+        <p class="fragment grow">grow</p>
+        <p class="fragment shrink">shrink</p>
+        <p class="fragment fade-out">fade-out</p>
+        <!-- <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+        <p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
+        <p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
+        <p class="fragment highlight-current-blue">blue only once</p>
+        <p class="fragment highlight-red">highlight-red</p>
+        <p class="fragment highlight-green">highlight-green</p>
+        <p class="fragment highlight-blue">highlight-blue</p> -->
+      </section>
+
+      <section>
+        <p class="fragment" data-fragment-index="3">Appears last</p>
+        <p class="fragment" data-fragment-index="1">Appears first</p>
+        <p class="fragment" data-fragment-index="2">Appears second</p>
+      </section>
+
+      <section data-markdown="README.md" data-separator="---" data-separator-vertical="--" data-separator-notes="^Note:"
+        data-charset="utf-8">
+      </section>
+
+      <section data-menu-title="Opening the menu">
+        <p>See the &nbsp;
+          <a href="#" onclick="RevealMenu.toggle(); return false;">
+            <i class="fa fa-bars"></i>
+          </a>&nbsp; in the corner?</p>
+        <p>Click it and the menu will open from the side.</p>
+        <p>
+          Click anywhere on the slide to return to the presentation,
+          <br> or use the close button in the menu.
+        </p>
+      </section>
+
+      <section id="keyboard" data-menu-title="Keyboard">
+        <p>Or you can open the menu by pressing the
+          <code>m</code> key.</p>
+        <p>
+          You can navigate the menu with the keyboard as well.
+          <br />Just use the arrow keys and
+          <code>&lt;space&gt;</code> or
+          <code>&lt;enter&gt;</code> to change slides.
+        </p>
+        <p>You can disable the keyboard for the
+          <br />menu in the options if you wish.</p>
+      </section>
+
+      <section id="titles">
+        <h3>Slide Titles</h3>
+        <p>
+          The menu uses the first heading to label each slide
+          <br /> but you can specify another label if you want.
+        </p>
+        <p>
+          Use a
+          <code>data-menu-title</code> attribute in the section element to give the slide a custom label, or add a
+          <code>menu-title</code> class to any element in the slide you wish.
+        </p>
+        <p>
+          You can change the
+          <code>titleSelector</code> option and use
+          <br /> any elements you like as the default for labelling each slide.
+        </p>
+      </section>
+
+      <section>
+        <section>
+          <h2>Vertical Slides</h2>
+          <p>The menu indents your vertical slides so it's easy to see the structure of your presentation.</p>
+          <br>
+          <a href="#" class="navigate-down">
+            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+              alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>Next slide down</h2>
+        </section>
+        <section>
+          <h2>At the bottom</h2>
+          <br>
+          <a href="#/2">
+            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+              alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+          </a>
+        </section>
+      </section>
+
+      <section id="transitions">
+        <h3>Transitions</h3>
+        <p>You can also change the default
+          <br />transition style from the menu.</p>
+      </section>
+
+      <section id="custom">
+        <h3>Custom Panels</h3>
+        <p>
+          Create your own custom menu panels where
+          <br /> you can add your own html content.
+        </p>
+        <p>
+          Custom panels support menu items so you
+          <br /> can create your own menus that look and
+          <br /> behaviour just like the other menus.
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js"></script>
+  <!-- cnd加载，避免highlight回调加载hljs异常问题，猜测原因hightlight第二批并行加载导致 -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/plugin/highlight/highlight.js"></script>
+  <script>
+    // Just press »Esc / o« on your keyboard to toggle the overview mode
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      mouseWheel: true,
+      slideNumber: 'c/t',
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+      transitionSpeed: 'default', // default/fast/slow
+      backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+      menu: {
+        numbers: true,
+        openSlideNumber: true,
+        themes: true,
+        themesPath: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/',
+        transitions: true,
+        custom: false
+      },
+      chalkboard: {
+        toggleChalkboardButton: {
+          left: "80px"
+        },
+        toggleNotesButton: {
+          left: "130px"
+        }
+      },
+      // Optional reveal.js plugins
+      dependencies: [{
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.min.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        },
+        {
+          src: 'plugin/menu/menu.js',
+          async: true
+        },
+        {
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/notes/notes.min.js',
+          async: true
+        },
+        {
+          src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.min.js'
+        },
+        {
+          src: 'plugin/chalkboard/chalkboard.js',
+          async: true
+        }
+      ],
+      // Just press »F« on your keyboard to show your presentation in fullscreen mode. Press the »ESC« key to exit fullscreen mode.
+      keyboard: {
+        67: function () {
+          RevealChalkboard.toggleNotesCanvas()
+        }, // toggle chalkboard when 'c' is pressed
+        66: function () {
+          RevealChalkboard.toggleChalkboard()
+        }, // toggle chalkboard when 'b' is pressed
+        46: function () {
+          RevealChalkboard.clear()
+        }, // clear chalkboard when 'DEL' is pressed
+        8: function () {
+          RevealChalkboard.reset()
+        }, // reset all chalkboard data when 'BACKSPACE' is pressed
+        68: function () {
+          RevealChalkboard.download()
+        }, // downlad chalkboard drawing when 'd' is pressed
+      },
+    });
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <a class="fork-cycle263" href="https://github.com/cycle263/PPTS">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+      src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67"
+      alt="Fork cycle263 on GitHub">
+  </a>
+</body>
+
+</html>
