@@ -12,7 +12,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
-  <link rel="shortcut icon" href="cycle.ico" />
+  <link rel="shortcut icon" href="../cycle.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/black.min.css"
     id="theme" />
@@ -21,6 +21,10 @@
   <style>
     .backgrounds {
       background-image: url("../assets/images/background.png");
+    }
+
+    small {
+      color: #bbb;
     }
   </style>
   <script>
@@ -75,6 +79,8 @@
       <section id="analysis" data-menu-title="analysis">
         <h3>如何分析？</h3>
         <img class="fragment fade-up" src="../assets/images/performance/performance-detail.jpg" alt="paint" />
+        <img style="position: absolute; bottom: 36px;right: 0;transform: scale(.7);" class="fragment fade-up"
+          src="../assets/images/performance/summay.jpg" alt="summay" />
       </section>
 
       <section id="compare" data-menu-title="compare">
@@ -102,6 +108,32 @@
         <p class="fragment fade-up">采集物料信息</p>
         <p class="fragment fade-up">基于物料进行审计评分</p>
         <p class="fragment fade-up">生成报告单</p>
+      </section>
+
+      <section id="audit" data-menu-title="audit">
+        <h3>性能指标</h3>
+        <p class="fragment fade-up">First Contentful Paint(20%)</p>
+        <p class="fragment fade-up">First Meaningful Paint(20%) -> Largest Contentful Paint</p>
+        <p class="fragment fade-up">Speed Index(10%)</p>
+        <p class="fragment fade-up">First CPU Idle</p>
+        <p class="fragment fade-up">Time to Interactive(15%)</p>
+        <p class="fragment fade-up">Max Potential First Input Delay(20%)</p>
+      </section>
+
+      <section id="audit" data-menu-title="audit">
+        <h3>解决方案</h3>
+        <p class="fragment fade-up">雅虎性能军规</p>
+        <p class="fragment fade-up">缓存 & CDN</p>
+        <p class="fragment fade-up">按需加载</p>
+        <p class="fragment fade-up">资源压缩 & 预解析</p>
+        <p class="fragment fade-up">等等...</p>
+      </section>
+
+      <section id="lighthouse" data-menu-title="lighthouse">
+        <h3>Thanks & Question?</h3>
+        <p>
+          <small>资料和图片来源声明：https://developers.google.com/</small>
+        </p>
       </section>
 
     </div>
@@ -153,7 +185,7 @@
           }
         },
         {
-          src: "plugin/menu/menu.js",
+          src: "../plugin/menu/menu.js",
           async: true
         },
         {
@@ -164,7 +196,7 @@
           src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.min.js"
         },
         {
-          src: "plugin/chalkboard/chalkboard.js",
+          src: "../plugin/chalkboard/chalkboard.js",
           async: true
         }
       ],

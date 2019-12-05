@@ -68,3 +68,5 @@
 [google 官网性能分析](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference)
 
 [google 性能模型](https://developers.google.com/web/fundamentals/performance/rail)
+
+[web.dev-lighthouse 官网](https://web.dev/first-contentful-paint/)
