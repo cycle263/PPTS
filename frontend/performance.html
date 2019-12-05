@@ -19,12 +19,8 @@
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/css/zenburn.min.css" />
   <style>
-    .slides>section {
+    .backgrounds {
       background-image: url("../assets/images/background.png");
-    }
-
-    #introduction {
-      background-image: url("../assets/images/background1.png");
     }
   </style>
   <script>
@@ -47,23 +43,28 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
       <section id="home">
-        <h1>如何用Chrome进行页面性能分析？</h1>
+        <h1>web性能分析之Chrome Dev tool</h1>
+        <h3 class="fragment fade-up">业务接连出现性能瓶颈</h3>
         <p>
           <small>Created by Cycle263</small>
         </p>
       </section>
 
-      <section id="mode" data-menu-title="mode">
-        <h3>性能模型</h3>
-        <img class="fragment fade-up" src="../assets/images/performance/RALL.png" alt="性能模型" />
-      </section>
-
       <section id="reaction" data-menu-title="reaction">
         <h3>用户反应</h3>
         <p class="fragment grow">16ms</p>
+        <p class="fragment grow">50ms</p>
         <p class="fragment grow">100ms</p>
         <p class="fragment grow">1000ms</p>
-        <p class="fragment grow">10000ms</p>
+      </section>
+
+      <section id="speed" data-menu-title="speed">
+        <img class="fragment" src="../assets/images/performance/speed-comparison.png" alt="speed" />
+      </section>
+
+      <section id="mode" data-menu-title="mode">
+        <h3>性能模型</h3>
+        <img class="fragment fade-up" src="../assets/images/performance/RALL.png" alt="性能模型" />
       </section>
 
       <section id="process" data-menu-title="process">
@@ -86,6 +87,14 @@
         <p class="fragment fade-up">性能测试报告</p>
       </section>
 
+      <section id="caslogin" data-menu-title="caslogin">
+        <img class="fragment" src="../assets/images/performance/caslogin.jpg" alt="caslogin" />
+      </section>
+
+      <section id="mindIndex" data-menu-title="mindIndex">
+        <img class="fragment" src="../assets/images/performance/mindIndex.jpg" alt="mindIndex" />
+      </section>
+
       <section id="audit" data-menu-title="audit">
         <h3>审计过程</h3>
         <p class="fragment fade-up">与chrome建立连接</p>
@@ -94,6 +103,7 @@
         <p class="fragment fade-up">基于物料进行审计评分</p>
         <p class="fragment fade-up">生成报告单</p>
       </section>
+
     </div>
   </div>
 
