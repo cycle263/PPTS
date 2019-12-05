@@ -70,3 +70,7 @@
 [google 性能模型](https://developers.google.com/web/fundamentals/performance/rail)
 
 [web.dev-lighthouse 官网](https://web.dev/first-contentful-paint/)
+
+[2019 年前端性能优化总结](https://zhuanlan.zhihu.com/p/55431529)
+
+[2019 年前端性能优化总结 1](https://github.com/xitu/gold-miner/blob/master/TODO1/front-end-performance-checklist-2019-pdf-pages-1.md)
